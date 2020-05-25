@@ -22,9 +22,10 @@ public class AnagramQuestion {
         String s = "anagram", t = "nagaram";
         System.out.println(checkAnagram(s, t) );
         System.out.println(checkAnagram("rat", "car") );
-        System.out.println(checkAnagram("fatih", "fait") );
+        System.out.println(checkAnagram("fatih", "faith") );
         System.out.println(checkAnagram("fatih", "taf") );
         System.out.println(checkAnagram("fatih", "tif") );
+        System.out.println(checkAnagram("listen", "silent") );
 
     }
 
