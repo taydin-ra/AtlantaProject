@@ -19,5 +19,26 @@ public class AnagramQuestion {
 		Anagram means, if two String are consist of the same letter
 		Example: listen and silent
 		 */
+        String s = "anagram", t = "nagaram";
+        System.out.println(checkAnagram(s, t) );
+        System.out.println(checkAnagram("rat", "car") );
+        System.out.println(checkAnagram("fatih", "fait") );
+        System.out.println(checkAnagram("fatih", "taf") );
+        System.out.println(checkAnagram("fatih", "tif") );
+
     }
+
+    public static boolean checkAnagram(String s, String t) {
+        int count=0;
+        for (int i = 0; i < t.length(); i++) {
+            for (int j = 0; j < s.length(); j++) {
+                if (t.charAt(i) == s.charAt(j)) {
+                    count++;
+                    break;
+                }
+            }
+        }
+     return count==t.length()? true:false;
+    }
+
 }
