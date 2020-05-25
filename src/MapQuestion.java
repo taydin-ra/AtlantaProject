@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class MapQuestion {
     public static void main(String[] args) {
         //	    Modify and print the given map as follows:
@@ -8,5 +10,20 @@ public class MapQuestion {
 //	    {"a": "Hi", "b": "There"} → {"a": "Hi", "ab": "HiThere", "b": "There"}
 //	    {"a": "Hi"} → {"a": "Hi"}
 //	    {"b": "There"} → {"b": "There"}
+
+        HashMap<String,String> map = new HashMap<>();
+        map.put("a", "Hi");
+        map.put("c", "There");
+
+        System.out.println(  checkMap(map, "a","c")  );
     }
+    public static HashMap<String, String> checkMap(HashMap<String,String> map,String a, String b){
+
+        if(map.containsKey(a) && map.containsKey(b))
+            map.put(a+b,map.get(a)+map.get(b));
+
+        return map;
+    }
+
+
 }
