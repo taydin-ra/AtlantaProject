@@ -26,7 +26,7 @@ public class AnagramQuestion {
         String s = "anagram", t = "nagaram";
         System.out.println(checkAnagram1(s, t) );
         System.out.println(checkAnagram1("rat1", "car") );
-        System.out.println(checkAnagram1("fatih1", "faith1") );
+       int a =19;
         System.out.println(checkAnagram1("fatih", "taf") );
         System.out.println(checkAnagram1("fatih", "tif") );
         System.out.println(checkAnagram1("listen", "silent") );
