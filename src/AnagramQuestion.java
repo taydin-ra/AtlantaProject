@@ -20,14 +20,14 @@ public class AnagramQuestion {
 		Example: listen and silent
 		 */
         String s = "anagram", t = "nagaram";
-        System.out.println(checkAnagram(s, t) );
-        System.out.println(checkAnagram("rat", "car") );
-        System.out.println(checkAnagram("fatih", "faith") );
-        System.out.println(checkAnagram("fatih", "taf") );
-        System.out.println(checkAnagram("fatih", "tif") );
-        System.out.println(checkAnagram("kalem", "kelam"));
-        System.out.println(checkAnagram("listen", "silent") );
-        System.out.println(checkAnagram("listeeeen", "sileeeent") );
+        System.out.println(s+ " and "+t+ " are anagram: " +checkAnagram(s, t) );
+        System.out.println("rat"+ " and "+"car"+ " are anagram: " +checkAnagram("rat", "car") );
+        System.out.println("fatih"+ " and "+"faith"+ " are anagram: " +checkAnagram("fatih", "faith") );
+        System.out.println("fatih"+ " and "+"taf"+ " are anagram: " +checkAnagram("fatih", "taf") );
+        System.out.println("fatih"+ " and "+"tif"+ " are anagram: " +checkAnagram("fatih", "tif") );
+        System.out.println("kalem"+ " and "+"kelam"+ " are anagram: " +checkAnagram("kalem", "kelam"));
+        System.out.println("listen"+ " and "+"silent"+ " are anagram: " +checkAnagram("listen", "silent") );
+        System.out.println("listeeeen"+ " and "+"sileeeent"+ " are anagram: " +checkAnagram("listeeeen", "sileeeent") );
     }
 
     public static boolean checkAnagram(String s, String t) {
@@ -40,7 +40,7 @@ public class AnagramQuestion {
                 }
             }
         }
-     return count==t.length()? true:false;
+     return count==s.length()? true:false;
     }
 
 }
