@@ -33,7 +33,8 @@ public class AnagramQuestion {
         System.out.println(checkAnagram("kalem", "kelam"));
         System.out.println(checkAnagram("listen", "silent") );
         System.out.println(checkAnagram("listeeeen", "sileeeent") );
-             
+        System.out.println(checkAnagram("list", "ist") );
+
 
     }
 
