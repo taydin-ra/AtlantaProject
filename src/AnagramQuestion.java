@@ -36,18 +36,31 @@ public class AnagramQuestion {
 
 		Anagram means, if two String are consist of the same letter
 
-        System.out.println(checkAnagram(s, t) );
-        System.out.println(checkAnagram("rat", "car") );
-        System.out.println(checkAnagram("fatih", "faith") );
-        System.out.println(checkAnagram("fatih", "taf") );
-        System.out.println(checkAnagram("fatih", "tif") );
-        System.out.println(checkAnagram("kalem", "kelam"));
-        System.out.println(checkAnagram("listen", "silent") );
-        System.out.println(checkAnagram("listeeeen", "sileeeent") );
              
 
 
 		Example: listen and silent
+
+
+
+        String s = "anagram", t = "nagaram";
+        System.out.println(checkAnagram1(s, t) );
+        System.out.println(checkAnagram1("rat", "car") );
+        System.out.println(checkAnagram1("fatih", "faith") );
+        System.out.println(checkAnagram1("fatih", "taf") );
+        System.out.println(checkAnagram1("fatih", "tif") );
+        System.out.println(checkAnagram1("listen", "silent") );
+        System.out.println(checkAnagram1("merve","evre"));
+
+    }
+
+    public static boolean checkAnagram1(String s, String t) {
+        int count=0;
+        for (int i = 0; i < t.length(); i++) {
+            for (int j = 0; j < s.length(); j++) {
+                if (t.charAt(i) == s.charAt(j)) {
+                    count++;
+                    break;
 
 		 */
         String str1 = "anagran";
@@ -65,6 +78,7 @@ public class AnagramQuestion {
                         count1++;
                     if (str1.charAt(i) == str2.charAt(j))
                         count2++;
+
                 }
                 if (count1 != count2) break OUTER;
 
