@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         String[] arr={"Orange","Kiwi","Peach","Banana","Orange"};
-        System.out.println (getCount (arr));
+        System.out.println (getCount (arr)+"HI");
 
     }
     public static int  getCount(String[] arr){
