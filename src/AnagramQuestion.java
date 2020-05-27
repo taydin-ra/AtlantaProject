@@ -25,8 +25,9 @@ public class AnagramQuestion {
         System.out.println(checkAnagram("fatih", "faith") );
         System.out.println(checkAnagram("fatih", "taf") );
         System.out.println(checkAnagram("fatih", "tif") );
+        System.out.println(checkAnagram("kalem", "kelam"));
         System.out.println(checkAnagram("listen", "silent") );
-
+        System.out.println(checkAnagram("listeeeen", "sileeeent") );
     }
 
     public static boolean checkAnagram(String s, String t) {
