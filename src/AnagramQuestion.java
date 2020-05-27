@@ -1,3 +1,5 @@
+import java.util.TreeMap;
+
 public class AnagramQuestion {
     public static void main(String[] args) {
         	/*
@@ -20,30 +22,47 @@ public class AnagramQuestion {
 		Example: listen and silent
 		 */
 
-        	// Hello
+        // Hello
         // hi
 
-        String s = "anagram", t = "nagaram";
-        System.out.println(checkAnagram1(s, t) );
-        System.out.println(checkAnagram1("rat1", "car") );
-        System.out.println(checkAnagram1("fatih1", "faith") );
-        System.out.println(checkAnagram1("fatih", "taf") );
-        System.out.println(checkAnagram1("fatih", "tif") );
-        System.out.println(checkAnagram1("listen", "silent") );
+        TreeMap<Character, Integer> map = new TreeMap<>();
 
-    }
+        String s = "anagram";
 
-    public static boolean checkAnagram1(String s, String t) {
-        int count=0;
-        for (int i = 0; i < t.length(); i++) {
-            for (int j = 0; j < s.length(); j++) {
-                if (t.charAt(i) == s.charAt(j)) {
-                    count++;
-                    break;
-                }
-            }
+        char[] c = s.toCharArray();
+
+        for (char ch : c) {
+            if (map.containsKey(ch)) {
+                map.put(ch, map.get(ch) + 1);
+            } else
+                map.put(ch, 1);
+
         }
-     return count==t.length()? true:false;
-    }
 
+        TreeMap<Character, Integer> map1 = new TreeMap<>();
+        String s2 = "nagaram";
+        char[] c2 = s2.toCharArray();
+        {
+            for (char ch2 : c2) {
+                if (map1.containsKey(ch2)) {
+                    map1.put(ch2, map1.get(ch2) + 1);
+                } else
+                    map1.put(ch2, 1);
+
+            }
+            System.out.println(map);
+            System.out.println(map1);
+        }
+
+        if (map.equals(map1)) {
+
+
+            System.out.println("they are anagram");
+
+        } else {
+            System.out.println("they are not anagram");
+
+        }
+
+    }
 }
