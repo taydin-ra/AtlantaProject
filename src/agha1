@@ -1,1 +1,17 @@
-dadadadDD
+public class Main {
+
+    public static void main(String[] args) {
+        String[] arr={"Orange","Kiwi","Peach","Banana","Orange"};
+        System.out.println (getCount (arr));
+
+    }
+    public static int  getCount(String[] arr){
+        int count=0;
+        for (int i=0;i<arr.length;i++){
+            if (arr[i].equals ("Orange")){
+                count++;
+            }
+        }
+        return count;
+    }
+}
