@@ -24,13 +24,16 @@ public class AnagramQuestion {
         // hi
 
         String s = "anagram", t = "nagaram";
-        System.out.println(checkAnagram1(s, t) );
-        System.out.println(checkAnagram1("rat1", "car") );
-        System.out.println(checkAnagram1("fatih", "faith") );
-        System.out.println(checkAnagram1("fatih", "taf") );
-        System.out.println(checkAnagram1("fatih", "tif") );
-        System.out.println(checkAnagram1("Tuba","Rana"));
-        System.out.println(checkAnagram1("listen", "silent") );
+
+        System.out.println(checkAnagram(s, t) );
+        System.out.println(checkAnagram("rat", "car") );
+        System.out.println(checkAnagram("fatih", "faith") );
+        System.out.println(checkAnagram("fatih", "taf") );
+        System.out.println(checkAnagram("fatih", "tif") );
+        System.out.println(checkAnagram("kalem", "kelam"));
+        System.out.println(checkAnagram("listen", "silent") );
+        System.out.println(checkAnagram("listeeeen", "sileeeent") );
+
 
     }
 
