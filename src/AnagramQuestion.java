@@ -19,7 +19,12 @@ public class AnagramQuestion {
 		Anagram means, if two String are consist of the same letter
 		Example: listen and silent
 		 */
+
+        	// Hello
+        // hi
+
         String s = "anagram", t = "nagaram";
+
         System.out.println(checkAnagram(s, t) );
         System.out.println(checkAnagram("rat", "car") );
         System.out.println(checkAnagram("fatih", "faith") );
@@ -28,9 +33,11 @@ public class AnagramQuestion {
         System.out.println(checkAnagram("kalem", "kelam"));
         System.out.println(checkAnagram("listen", "silent") );
         System.out.println(checkAnagram("listeeeen", "sileeeent") );
+
+
     }
 
-    public static boolean checkAnagram(String s, String t) {
+    public static boolean checkAnagram1(String s, String t) {
         int count=0;
         for (int i = 0; i < t.length(); i++) {
             for (int j = 0; j < s.length(); j++) {
