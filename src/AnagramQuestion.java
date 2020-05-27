@@ -20,7 +20,8 @@ public class AnagramQuestion {
 		Example: listen and silent
 		 */
 
-        	// Hello  
+        	// Hello
+
         String s = "anagram", t = "nagaram";
         System.out.println(checkAnagram(s, t) );
         System.out.println(checkAnagram("rat", "car") );
