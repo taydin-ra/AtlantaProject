@@ -11,18 +11,23 @@ public class MapQuestion {
 //	    {"a": "Hi"} → {"a": "Hi"}
 //	    {"b": "There"} → {"b": "There"}
 
-        HashMap<String,String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<>();
+
         map.put("a", "Hi");
-        map.put("c", "There");
+        map.put("b", "There");
+        System.out.println(map);
 
-        System.out.println(  checkMap(map, "a","c")  );
-    }
-    public static HashMap<String, String> checkMap(HashMap<String,String> map,String a, String b){
+        if (map.containsKey("a") && map.containsKey("b")) {
+            System.out.println("ab: " + map.get("a") + map.get("b"));
 
-        if(map.containsKey(a) && map.containsKey(b))
-            map.put(a+b,map.get(a)+map.get(b));
+        } else if (map.containsKey("b") || map.containsKey("a")) {
 
-        return map;
+            System.out.println(map);
+        } else {
+            System.out.println();
+        }
+
+
     }
 
 
