@@ -23,10 +23,9 @@ public class AnagramQuestion {
         	// Hello
         // hi
 
-        String s = "anagram", t = "nagarammmmm";
+        String s = "anagram", t = "nagaram";
         System.out.println(checkAnagram1(s, t) );
         System.out.println(checkAnagram1("rat1", "car") );
-        System.out.println(checkAnagram1("Trial","liii"));
         System.out.println(checkAnagram1("fatih1", "faith") );
         System.out.println(checkAnagram1("fatih", "taf") );
         System.out.println(checkAnagram1("fatih", "tif") );
