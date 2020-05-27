@@ -17,6 +17,7 @@ public class MapQuestion {
         map.put("b", "There");
         System.out.println(map);
 
+
         if (map.containsKey("a") && map.containsKey("b")) {
             System.out.println("ab: " + map.get("a") + map.get("b"));
 
@@ -26,6 +27,11 @@ public class MapQuestion {
         } else {
             System.out.println();
         }
+
+        System.out.println(  checkMap(map, "a","c")  );
+    }
+    public static HashMap<String,String> checkMap(HashMap<String,String> map,String a, String b){
+
 
 
     }
