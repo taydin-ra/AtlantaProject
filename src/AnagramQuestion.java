@@ -84,7 +84,7 @@ public class AnagramQuestion {
 
             }
 
-        }
+        }  
         if (count < str1.length() - 1)
             System.out.println(str1 + " and " + str2 + " are \"anagram\": " + false);
         else System.out.println(str1 + " and " + str2 + " are \"anagram\": " + true);
