@@ -21,19 +21,19 @@ public class AnagramQuestion {
 		 */
 
         	// Hello
-        // hi  
+        // hi
 
-        String s = "anagram", t = "nagaram";
-        System.out.println(checkAnagram(s, t) );
-        System.out.println(checkAnagram("rat", "car") );
-        System.out.println(checkAnagram("fatih", "faith") );
-        System.out.println(checkAnagram("fatih", "taf") );
-        System.out.println(checkAnagram("fatih", "tif") );
-        System.out.println(checkAnagram("listen", "silent") );
+        String s = "anagram", t = "nagarammmmm";
+        System.out.println(checkAnagram1(s, t) );
+        System.out.println(checkAnagram1("rat", "car") );
+        System.out.println(checkAnagram1("fatih", "faith") );
+        System.out.println(checkAnagram1("fatih", "taf") );
+        System.out.println(checkAnagram1("fatih", "tif") );
+        System.out.println(checkAnagram1("listen", "silent") );
 
     }
 
-    public static boolean checkAnagram(String s, String t) {
+    public static boolean checkAnagram1(String s, String t) {
         int count=0;
         for (int i = 0; i < t.length(); i++) {
             for (int j = 0; j < s.length(); j++) {
