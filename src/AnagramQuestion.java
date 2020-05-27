@@ -31,9 +31,21 @@ public class AnagramQuestion {
 
 		Note:
 
+
 		You may assume the string contains only lowercase alphabets.
 
 		Anagram means, if two String are consist of the same letter
+
+        System.out.println(checkAnagram(s, t) );
+        System.out.println(checkAnagram("rat", "car") );
+        System.out.println(checkAnagram("fatih", "faith") );
+        System.out.println(checkAnagram("fatih", "taf") );
+        System.out.println(checkAnagram("fatih", "tif") );
+        System.out.println(checkAnagram("kalem", "kelam"));
+        System.out.println(checkAnagram("listen", "silent") );
+        System.out.println(checkAnagram("listeeeen", "sileeeent") );
+             
+
 
 		Example: listen and silent
 
