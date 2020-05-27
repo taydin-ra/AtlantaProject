@@ -29,6 +29,7 @@ public class AnagramQuestion {
         System.out.println(checkAnagram1("fatih", "faith") );
         System.out.println(checkAnagram1("fatih", "taf") );
         System.out.println(checkAnagram1("fatih", "tif") );
+        System.out.println(checkAnagram1("Tuba","Rana"));
         System.out.println(checkAnagram1("listen", "silent") );
 
     }
