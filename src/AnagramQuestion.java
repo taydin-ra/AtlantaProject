@@ -43,6 +43,20 @@ public class AnagramQuestion {
 
 
 
+
+        System.out.println(checkAnagram(s, t) );
+        System.out.println(checkAnagram("rat", "car") );
+        System.out.println(checkAnagram("fatih", "faith") );
+        System.out.println(checkAnagram("fatih", "taf") );
+        System.out.println(checkAnagram("fatih", "tif") );
+        System.out.println(checkAnagram("kalem", "kelam"));
+        System.out.println(checkAnagram("listen", "silent") );
+        System.out.println(checkAnagram("listeeeen", "sileeeent") );
+
+
+        System.out.println(checkAnagram("list", "ist") );
+        System.out.println(checkAnagram("sibel", "issabel") );
+
         String s = "anagram", t = "nagaram";
         System.out.println(checkAnagram1(s, t) );
         System.out.println(checkAnagram1("rat", "car") );
