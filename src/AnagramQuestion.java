@@ -32,12 +32,13 @@ public class AnagramQuestion {
         System.out.println(checkAnagram("fatih", "tif") );
         System.out.println(checkAnagram("kalem", "kelam"));
         System.out.println(checkAnagram("listen", "silent") );
+        System.out.println(checkAnagram("ersin","ozkan"));
         System.out.println(checkAnagram("listeeeen", "sileeeent") );
 
 
     }
 
-    public static boolean checkAnagram1(String s, String t) {
+    public static boolean checkAnagram(String s, String t) {
         int count=0;
         for (int i = 0; i < t.length(); i++) {
             for (int j = 0; j < s.length(); j++) {
