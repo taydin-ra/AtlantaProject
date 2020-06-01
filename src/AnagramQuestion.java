@@ -32,7 +32,7 @@ public class AnagramQuestion {
         System.out.println(checkAnagram("fatih", "tif") );
         System.out.println(checkAnagram("kalem", "kelam"));
         System.out.println(checkAnagram("listen", "silent") );
-        System.out.println(checkAnagram("ersin","ozkan"));
+        System.out.println(checkAnagram("triangle","integral"));
         System.out.println(checkAnagram("listeeeen", "sileeeent") );
 
 
