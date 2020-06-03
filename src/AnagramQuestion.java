@@ -11,7 +11,7 @@ public class AnagramQuestion {
 
 		a:3
 
-		n:1
+		n:1  
 
 		g:1
 
