@@ -38,7 +38,7 @@ public class AnagramQuestion {
 		Example: listen and silent
 
 		 */
-        String str1 = "anagran";
+        String str1 = "anaramt";
         String str2 = "gramana";
         int count2 = 0;
         int count1 = 0;
@@ -46,7 +46,7 @@ public class AnagramQuestion {
         if (str1.length() == str2.length()) {
             OUTER:
             for (int i = 0; i < str1.length(); i++) {
-                count = i;
+
                 INNER:
                 for (int j = 0; j < str1.length(); j++) {
                     if (str1.charAt(i) == str1.charAt(j))
@@ -55,9 +55,8 @@ public class AnagramQuestion {
                         count2++;
                 }
                 if (count1 != count2) break OUTER;
-
+                count = i;
             }
-
         }
         if (count < str1.length() - 1)
             System.out.println(str1 + " and " + str2 + " are \"anagram\": " + false);
